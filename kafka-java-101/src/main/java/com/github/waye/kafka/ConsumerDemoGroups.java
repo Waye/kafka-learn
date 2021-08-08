@@ -12,12 +12,12 @@ import java.time.Duration;
 import java.util.Arrays;
 import java.util.Properties;
 
-public class ConsumerDemo {
+public class ConsumerDemoGroups {
 	public static void main(String[] args) {
-		Logger logger = LoggerFactory.getLogger(ConsumerDemo.class.getName());
+		Logger logger = LoggerFactory.getLogger(ConsumerDemoGroups.class.getName());
 		
-		String bootstrapServers="0.0.0.0:9092";
-		String groupId="my-first-application";
+		String bootstrapServers="localhost:9092";
+		String groupId="my-fifth-application";
 		String topic ="first_topic";
 		// create consumer's configuration
 		Properties properties = new Properties();
